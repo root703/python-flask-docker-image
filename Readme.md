@@ -38,13 +38,14 @@
 
 ## Docker commands
 
+
 ```bash
     
         // List all running container
-        docker ps
+       	 docker ps
 
         // list all containers
-        docker ps -a
+       	 docker ps -a
 
 
         // list all docker images
@@ -55,9 +56,11 @@
 
         
         // run a docker container in daemon mode with ports exposed
-        docker run -it -d -p <outsidePort>:<dockerInsidePort> <imageName:version>
-
-
+        
+	docker run -it -d -p <outsidePort>:<dockerInsidePort> <imageName:version>
+	 
+## project deployment port 9000
+	docker run -it -d -p 9000:5000 flaskapp
 
 
 ```
